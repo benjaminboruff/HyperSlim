@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <script src="assets/js/htmx.min.js"></script>
+    <script src="assets/js/_hyperscript.min.js"></script>
+  </head>
+  <body hx-boost="true">
+    <div id="content">{% block content %}{% endblock %}</div>
+  </body>
+</html>

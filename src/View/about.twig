@@ -1,0 +1,13 @@
+{% extends "layout.twig" %}
+
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+<div>
+  <h2>About</h2>
+  <p>This route brought to you by <a href="http://htmx.org">htmx</a>.</p>
+  <button hx-get="/" hx-target="#content" hx-push-url="true">Back</button>
+</div>
+
+{% endblock %}
