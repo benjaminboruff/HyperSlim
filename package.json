@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "make": "bun build ./node_modules/htmx.org/dist/htmx.js --outdir ./public/assets/js --minify --target browser  --entry-naming app.js"
+    "make": "bun build ./node_modules/htmx.org/dist/htmx.js ./node_modules/hyperscript.org/dist/_hyperscript.js --outdir ./public/assets/js --minify --target browser --entry-naming [name].[ext]"
   },
   "dependencies": {
-    "htmx.org": "^1.9.10"
+    "htmx.org": "^1.9.10",
+    "hyperscript.org": "^0.9.12"
   }
 }
