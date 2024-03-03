@@ -1,12 +1,12 @@
 {% extends "layout.twig" %} 
 
-{% block title %}FattySlim{% endblock %} 
+{% block title %} HyperSlim {% endblock %} 
 
 {% block content %}
 
-<div>
-  <h2>Welcome to HyperSlim</h2>
-  <button hx-get="/about" hx-target="#content" hx-push-url="true">About</button>
+<div class="container">
+  <h1 class="title">Welcome to HyperSlim</h1>
+  <button hx-get="/about" hx-target="#content" hx-swap="outerHTML" hx-push-url="true">About</button>
   <button _="on click alert('This alert brought to you by hyperscript.org')">Alert</button>
 </div>
 
