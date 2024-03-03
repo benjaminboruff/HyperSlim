@@ -1,9 +1,0 @@
-{
-  "scripts": {
-    "make": "bun build ./src/View/assets/js/app.js --outdir ./public/assets/js --minify --target browser --entry-naming app.js"
-  },
-  "dependencies": {
-    "htmx.org": "^1.9.10",
-    "hyperscript.org": "^0.9.12"
-  }
-}
