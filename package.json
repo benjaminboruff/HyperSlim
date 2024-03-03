@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "make": "bun build ./node_modules/htmx.org/dist/htmx.js --outdir ./public/assets/js --minify --target browser  --entry-naming app.js"
+  },
+  "dependencies": {
+    "htmx.org": "^1.9.10"
+  }
+}

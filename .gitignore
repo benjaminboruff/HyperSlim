@@ -2,5 +2,6 @@ config/*.php
 
 node_modules/
 vendor/
+public/assets/js/*
 
 *.sqlite
