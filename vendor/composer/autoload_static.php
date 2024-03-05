@@ -15,10 +15,11 @@ class ComposerStaticInit026509606a55be5c56c243e48adc6597
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'a1cfe24d14977df6878b9bf804af2d1c' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'aadac1114cab8dc19489a7f6dc24c003' => __DIR__ . '/..' . '/pestphp/pest-plugin-arch/src/Autoload.php',
+        'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         'f83ed111c2f97a0449abf067f157f418' => __DIR__ . '/..' . '/pestphp/pest/src/Functions.php',
@@ -81,9 +82,17 @@ class ComposerStaticInit026509606a55be5c56c243e48adc6597
         array (
             'NunoMaduro\\Collision\\' => 21,
         ),
+        'L' => 
+        array (
+            'Laravel\\SerializableClosure\\' => 28,
+        ),
         'J' => 
         array (
             'Jean85\\' => 7,
+        ),
+        'I' => 
+        array (
+            'Invoker\\' => 8,
         ),
         'F' => 
         array (
@@ -103,6 +112,8 @@ class ComposerStaticInit026509606a55be5c56c243e48adc6597
             'Doctrine\\Common\\Collections\\' => 28,
             'Doctrine\\Common\\' => 16,
             'DeepCopy\\' => 9,
+            'DI\\Bridge\\Slim\\' => 15,
+            'DI\\' => 3,
         ),
     );
 
@@ -255,9 +266,17 @@ class ComposerStaticInit026509606a55be5c56c243e48adc6597
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
         ),
+        'Laravel\\SerializableClosure\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
+        ),
         'Jean85\\' => 
         array (
             0 => __DIR__ . '/..' . '/jean85/pretty-package-versions/src',
+        ),
+        'Invoker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/invoker/src',
         ),
         'Fig\\Http\\Message\\' => 
         array (
@@ -310,6 +329,14 @@ class ComposerStaticInit026509606a55be5c56c243e48adc6597
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'DI\\Bridge\\Slim\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/slim-bridge/src',
+        ),
+        'DI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/php-di/src',
         ),
     );
 

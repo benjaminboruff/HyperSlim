@@ -42,7 +42,9 @@ return array(
     'PHPUnit\\Architecture\\' => array($vendorDir . '/ta-tikoma/phpunit-architecture-test/src'),
     'PHPStan\\PhpDocParser\\' => array($vendorDir . '/phpstan/phpdoc-parser/src'),
     'NunoMaduro\\Collision\\' => array($vendorDir . '/nunomaduro/collision/src'),
+    'Laravel\\SerializableClosure\\' => array($vendorDir . '/laravel/serializable-closure/src'),
     'Jean85\\' => array($vendorDir . '/jean85/pretty-package-versions/src'),
+    'Invoker\\' => array($vendorDir . '/php-di/invoker/src'),
     'Fig\\Http\\Message\\' => array($vendorDir . '/fig/http-message-util/src'),
     'Fidry\\CpuCoreCounter\\' => array($vendorDir . '/fidry/cpu-core-counter/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
@@ -56,4 +58,6 @@ return array(
     'Doctrine\\Common\\Collections\\' => array($vendorDir . '/doctrine/collections/src'),
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/event-manager/src'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
+    'DI\\Bridge\\Slim\\' => array($vendorDir . '/php-di/slim-bridge/src'),
+    'DI\\' => array($vendorDir . '/php-di/php-di/src'),
 );
