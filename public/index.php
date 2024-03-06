@@ -7,12 +7,12 @@ use Slim\Views\Twig;
 use Slim\Views\TwigMiddleware;
 use DI\Bridge\Slim\Bridge;
 
-require_once __DIR__ . '/../bootstrap.php';
+$container = require_once __DIR__ . '/../bootstrap.php';
 
 // $app = AppFactory::create();
 
 // use PHP-DI's Bridge
-$app = Bridge::create();
+$app = Bridge::create($container);
 
 $twig = Twig::create(__DIR__ . '/../src/View', ['cache' => false]);
 
