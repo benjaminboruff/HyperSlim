@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Domain;
+
+use DateTime;
+use Doctrine\DBAL\Types\DateTimeTzType;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity]
@@ -14,11 +18,11 @@ final class User
     #[ORM\Column(type: 'string', nullable: true)]
     private string $name;
 
-    #[ORM\Column(type: 'string')]
+    #[ORM\Column(type: 'string', unique: true, nullable: false)]
     private string $email;
 
-    #[ORM\Column(name: 'registered_at', type: 'datetimetz_immutable', nullable: false)]
-    private DateTimeImmutable $registeredAt;
+    #[ORM\Column(name: 'registered_at', type: 'datetime', nullable: false)]
+    private DateTime $registeredAt;
 
     public function getId(): int
     {
@@ -45,8 +49,13 @@ final class User
         $this->email = $email;
     }
 
-    public function getRegisteredAt(): DateTimeImmutable
+    public function getRegisteredAt(): DateTime
     {
         return $this->registeredAt;
+    }
+
+    public function setRegisteredAt(): void
+    {
+        $this->registeredAt = new DateTime("now");
     }
 }
