@@ -3,10 +3,10 @@
 namespace App\Domain;
 
 use DateTime;
-use Doctrine\DBAL\Types\DateTimeTzType;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\UserRepository;
 
-#[ORM\Entity]
+#[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\Table(name: 'users')]
 final class User
 {
