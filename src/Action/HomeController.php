@@ -1,5 +1,5 @@
 <?php
-// UserController.php
+// HomeController.php
 
 namespace App\Action;
 
