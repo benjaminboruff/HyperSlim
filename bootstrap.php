@@ -16,6 +16,10 @@ if (!file_exists(__DIR__ . '/settings.php')) {
     copy(__DIR__ . '/settings.php.dist', __DIR__ . '/settings.php');
 }
 
+if (!file_exists(__DIR__ . '/var/database.sqlite')) {
+    touch(__DIR__ . '/var/database.sqlite');
+}
+
 $container =  new Container(require __DIR__ . '/settings.php');
 
 $settings = $container->get('settings');
