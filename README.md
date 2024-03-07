@@ -3,7 +3,9 @@
 A simple Hypermedia oriented stack for PHP.
 
 - [Slim](http://slimframework.com)
+- [PHP-DI](http://php-di.org)
 - [Doctrine](http://doctrine-project.org)
+- [Twig](http://twig.symfony.com)
 - [htmx](http://htmx.org)
 - [\_hyperscript](http://hyperscript.org)
 - [Bulma](http://bulma.io)
