@@ -18,8 +18,8 @@ A simple Hypermedia oriented stack for PHP.
 
 ## Installation
 
-- **Easy** Just create your own repo from this template, then `git clone` it.
-- **harder** `git clone` this repo, then change it's name, nuke the `.git` dir, etc.
+- **Easy:** Just create your own repo from this template, then `git clone` it.
+- **Harder:** `git clone` this repo, then change it's name, nuke the `.git` dir, etc.
 
 ## Setup
 
