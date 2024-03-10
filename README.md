@@ -69,7 +69,6 @@ will be working online most of the time.
 │ └── View              // The home for views ...
 │ ├── about.twig
 │ ├── index.twig
-│ ├── layout.twig
 │ └── users.twig
 ├── tests               // Tests ...
 │ ├── Feature
