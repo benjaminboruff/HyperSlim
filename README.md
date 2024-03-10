@@ -42,43 +42,48 @@ will be working online most of the time.
 
 ```
 ├── bin
-│ ├── create_user   // A sample CLI script to add users. There is no error checking. Beware.
-│ └── doctrine      // The CLI runner for all Doctrine commands.
-├── bootstrap.php   // Primarily sets up the DI container with Doctrine settings, and autoloads the PHP classes, etc.
+│   ├── create_user
+│   └── doctrine
+├── bootstrap.php
 ├── composer.json
 ├── composer.lock
 ├── phpunit.xml
 ├── public
-│ ├── assets
-│ │ ├── css
-│ │ │ └── bulma.min.css
-│ │ └── js
-│ │ ├── htmx.min.js
-│ │ └── \_hyperscript.min.js
-│ └── index.php         // The main app file that pulls it all together. The routes are defined here ...
-├── settings.php        // Modify this to suit local needs. This is automatically copied from settings.php.dist if it doesn't exist.
-├── settings.php.dist   // The template for the real settings.php.
+│   ├── assets
+│   │   ├── css
+│   │   │   └── bulma.min.css
+│   │   └── js
+│   │       ├── htmx.min.js
+│   │       └── _hyperscript.min.js
+│   └── index.php
+├── README.md
+├── settings.php
+├── settings.php.dist
 ├── src
-│ ├── Action            // The home for controllers, services, ...
-│ │ ├── HomeController.php
-│ │ └── UserController.php
-│ ├── Domain            // The domain models
-│ │ └── User.php
-│ ├── Repository        // Repositories that separate database logic from domain models and actions.
-│ │ └── UserRepository.php
-│ └── View              // The home for views ...
-│ ├── about.twig
-│ ├── index.twig
-│ └── users.twig
-├── tests               // Tests ...
-│ ├── Feature
-│ │ └── ExampleTest.php
-│ ├── Pest.php
-│ ├── TestCase.php
-│ └── Unit
-│ └── ExampleTest.php
-└── var                 // A home for various app side effects.
-├── coverage
-├── database.sqlite     // The sqlite file will be automatically created the first time the app is run (and accessed), unless it already exists.
-└── doctrine
+│   ├── Action
+│   │   ├── HomeController.php
+│   │   └── UserController.php
+│   ├── Domain
+│   │   └── User.php
+│   ├── Repository
+│   │   └── UserRepository.php
+│   └── View
+│       ├── full
+│       │   ├── about.twig
+│       │   ├── index.twig
+│       │   └── users.twig
+│       └── partial
+│           ├── about.twig
+│           └── users.twig
+├── tests
+│   ├── Feature
+│   │   └── ExampleTest.php
+│   ├── Pest.php
+│   ├── TestCase.php
+│   └── Unit
+│       └── ExampleTest.php
+└── var
+    ├── coverage
+    ├── database.sqlite
+    └── doctrine
 ```
