@@ -19,6 +19,6 @@ class HomeController
     {
         $view = Twig::fromRequest($request);
 
-        return $view->render($response, 'index.twig');
+        return $view->render($response, 'full/index.twig');
     }
 }

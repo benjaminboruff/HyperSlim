@@ -21,9 +21,13 @@ class UserController
 
     public function index(Request $request, Response $response): Response
     {
-        $users = $this->userRepository->getAllUsers();
         $view = Twig::fromRequest($request);
+        $users = $this->userRepository->getAllUsers();
 
-        return $view->render($response, 'users.twig', ['users' => $users]);
+        if ($request->hasHeader('HX-Request')) {
+            return $view->render($response, 'partial/users.twig', ['users' => $users]);
+        } else {
+            return $view->render($response, 'full/users.twig', ['users' => $users]);
+        }
     }
 }
