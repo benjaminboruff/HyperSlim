@@ -1,5 +1,5 @@
 {
-    "name": "benjaminboruff/HyperSlim",
+    "name": "benjaminboruff/hyperslim",
     "description": "A HyperMedia oriented PHP stack based on the Slim framework",
     "keywords": [
         "microframework",
